@@ -33,10 +33,17 @@ num1 = 55 //notice that once we've declared the variable using 'var' we don't ha
 
 num2 = 40
 
-answer // caculate the new subtraction problem and store the answer in this variable
+answer = num1 - num2
+
+// caculate the new subtraction problem and store the answer in this variable
 
 // concatenate so that it prints the string "55 - 40 = 15"
-print("")
+print(String(Int(num1)) + "-" + String(Int(num2)) + " = " + String(Int(answer)))
+    
+
+
+    
+    
 
 
 //-------------------------------------------------------------------------------------------------
@@ -49,34 +56,35 @@ num2 = 3
 answer
 
 // concatenate so that it prints the string "4 * 3 = 12"
-print("")
+print(String(Int(num1)) + "*" + String(Int(num2)) + " = " + String(Int(answer)))
+
 
 
 //-------------------------------------------------------------------------------------------------
 // 3
 // division
-num1
+num1 = 20
 
-num2
+num2 = 4
 
-answer
+answer = num1 - num2
 
 // concatenate so that it prints the string "20 / 4 = 5"
-print("")
+print(String(Int(num1)) + "/" + String(Int(num2)) + " = " + String(Int(answer)))
 
 
 //-------------------------------------------------------------------------------------------------
 // 4
 // modulus
 // use the modulus (%) operator to find the remainder when you divide 453 / 7
-num1
+num1 = 453
 
-num2
+num2 = 7
 
-answer
+answer = Double(Int(num1) % Int(num2))
 
 // concatenate so that it prints the string, complete with the answer "453 % 7 = ___"
-print("")
+print(String(Int(num1)) + " % " + String(Int(num2)) + " = " + String(Int(answer)))
 
 
 //-------------------------------------------------------------------------------------------------
@@ -84,11 +92,16 @@ print("")
 // exponents
 // use a method in the Darwin library to find the answer to 54^3
 // Look up "Calculate power of a number in swift" and see what you can find!
-num1
+num1 = 54
 
-num2
+num2 = 3
 
-answer
+answer = pow(num1,num2)
+
+print(answer)
+
+    
+    
 
 // concatenate so that it prints the string "54^3 = ___"
 print("")
@@ -97,15 +110,15 @@ print("")
 //-------------------------------------------------------------------------------------------------
 // 6
 // combining multiple operators
-num1
+num1 = 60
 
-num2
+num2 = 5
 
-var num3: Double
+var num3: Double = 8
 
-var num4: Double
+var num4: Double = 3
 
-answer
+answer = num1 / num2 + num3 % num4
 
 // concatenate so that it prints the string "(60 / 5) + (8 % 3)"
 print("")
@@ -117,10 +130,14 @@ print("")
 // get the value of pi and set it to the constant defined below
 // Check out http://stackoverflow.com/questions/26324050/how-to-get-mathemical-pi-constant-in-swift
 
-let pi: Double 
+let pi:Double = Double.pi
 
 // concatenate so that it prints the string "The value of pi is approximately 3.141592653589793"
-print("")
+
+print(pi)
+
+
+
 
 
 //-------------------------------------------------------------------------------------------------
