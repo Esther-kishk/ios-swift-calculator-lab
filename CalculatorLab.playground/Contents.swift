@@ -114,14 +114,15 @@ num1 = 60
 
 num2 = 5
 
-var num3: Double = 8
+var num3: Int = 8
 
-var num4: Double = 3
+var num4: Int = 3
 
-answer = num1 / num2 + num3 % num4
+answer = Double(Int(num1) / Int(num2) + Int(num3) % Int(num4))
 
 // concatenate so that it prints the string "(60 / 5) + (8 % 3)"
-print("")
+
+print(String(Int(num1)) + " / " + String(Int(num2)) + String(Int(num3)) + " % " + String(Int(num4)))
 
 
 //-------------------------------------------------------------------------------------------------
@@ -130,11 +131,11 @@ print("")
 // get the value of pi and set it to the constant defined below
 // Check out http://stackoverflow.com/questions/26324050/how-to-get-mathemical-pi-constant-in-swift
 
-let pi:Double = Double.pi
+// let pi:Double = Double.pi
 
 // concatenate so that it prints the string "The value of pi is approximately 3.141592653589793"
 
-print(pi)
+// print(pi)
 
 
 
@@ -148,6 +149,18 @@ print(pi)
 // Step 3: Now cut the number in half and print to the console
 // Step 4: Round to the nearest whole number and display on the console
 // Step 5: If you divided your result by 5, what would the remainder be? Then print "My power level is over \(Your_Variable_Here)"
+
+
+var q = 3.8
+var w = 100.0
+answer = q + w
+print ("After adding \(w) your answer is \(q + w)")
+var t = 3.0
+print (answer * t)
+print ((answer * t) / 2)
+print (Int(answer * t) / 2)
+var c = (Int(answer * t) / 10)
+print ("My power level is over \(c)")
 
 
 
