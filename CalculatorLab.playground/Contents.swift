@@ -22,7 +22,7 @@ print  (String(num1) + " + " + String(num2) + " = "  + String(answer))
 // concatenate a string inside the print statement so that it prints the string "1.0 + 1.0 = 2.0"
 // bonus: create new variables that hold Ints and cast the values of num1 and num2 to integers. Then interpolate the new variables so that the string reads "1 + 1 = 2"
 
-
+print (String(num1) + "+" + String(num2) + "=" + String(answer))
 
 
 
@@ -53,7 +53,7 @@ num1 = 4
 
 num2 = 3
 
-answer
+answer = num1 * num2
 
 // concatenate so that it prints the string "4 * 3 = 12"
 print(String(Int(num1)) + "*" + String(Int(num2)) + " = " + String(Int(answer)))
@@ -104,7 +104,7 @@ print(answer)
     
 
 // concatenate so that it prints the string "54^3 = ___"
-print("")
+print(String(num1) + "^" + String(num2) + "=" + String(answer))
 
 
 //-------------------------------------------------------------------------------------------------
@@ -133,10 +133,16 @@ print(String(Int(num1)) + " / " + String(Int(num2)) + String(Int(num3)) + " % " 
 
 // let pi:Double = Double.pi
 
+var pi = Double.pi
+
+
 // concatenate so that it prints the string "The value of pi is approximately 3.141592653589793"
+
+print ("The value of pi is approximatly \(Double.pi)")
 
 // print(pi)
 
+print (pi)
 
 
 
